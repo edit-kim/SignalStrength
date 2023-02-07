@@ -1,6 +1,6 @@
 all: SignalStrength
 main.o : main.cpp
-DeauthAttack : main.o -ltins
+SignalStrength : main.o -ltins
 	$(LINK.cc) $^  $(LDLIBS) -o $@
 
 clean:
